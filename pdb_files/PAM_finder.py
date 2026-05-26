@@ -30,7 +30,7 @@ output_file = 'PAM_Validation_Results.tsv'
 df[['TargetSequence(RNAversion)', 'Extracted_GG_Region', 'PAM_Status']].to_csv(output_file, sep='\t', index=False)
 
 # 5. Summary Report for the user
-print "Analysis Complete."
-print "Valid (GG) count:   ", len(df[df['PAM_Status'] == "Valid (GG)"])
-print "Invalid count:      ", len(df[df['PAM_Status'] != "Valid (GG)"])
-print "Results saved to:    " + output_file
+print("Analysis Complete.")
+print("Valid (GG) count:   ", len(df[df['PAM_Status'] == "Valid (GG)"]))
+print("Invalid count:      ", len(df[df['PAM_Status'] != "Valid (GG)"]))
+print("Results saved to:    " + output_file)
